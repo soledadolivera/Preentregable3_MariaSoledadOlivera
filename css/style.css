@@ -1,167 +1,124 @@
-/* reseteo de codigo para unificar los espacios */
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: rgb(234, 222, 207);
-    font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: rgb(234, 222, 207);
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
+
 header {
-    background-color: rgb(168, 177, 174);
-    text-align: center;
-    margin:10px;
-    padding: 10px;
-    z-index:100;
+  background-color: rgb(168, 177, 174);
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  z-index: 100;
+}
+header img {
+  width: 150px;
+  padding: 10px;
+  max-width: 40cm;
+  min-width: 2cm;
+  height: auto;
+}
+header h1 {
+  color: aliceblue;
+  padding: 5px;
+  font-family: "Merriweather", serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+header h2 {
+  color: aliceblue;
+  padding: 5px;
+  font-family: "Merriweather", serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+header nav {
+  top: 0;
+  position: sticky;
+}
+header nav .menu {
+  position: sticky;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+header nav .menu li {
+  padding: 10px;
+  display: inline-block; /* para que me queden los elementos uno al lado del otro */
+}
+header nav .menu li a {
+  position: sticky;
+  color: aliceblue;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+header nav .menu li a:hover {
+  color: rgb(168, 177, 174);
+  background-color: aliceblue;
 }
 
-header img{
-    width: 150px;
-    padding: 10px;
-    max-width: 40cm;
-    min-width: 2cm;
-    height: auto;
+main .acomodar_contenido {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
-
-nav {
-    top: 0;
-    z-index: 100;
+main .section1 .subtitulo {
+  color: rgb(148, 107, 53);
+  text-align: center;
 }
-
-.nav {
-    top: 0;
-    position: sticky;
+main .section1 p {
+  padding: 20px;
+  line-height: 1.5;
+  font-size: 1.2rem;
+  font-family: "Playfair Display", serif;
 }
-
-.menu {
-    position: sticky;
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    
+main .section2 .imagenes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
-
-.acomodar_contenido {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+main .section2 .imagenes .imagenes1 {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
-h1, h2 {
-    color: aliceblue;
-    padding: 5px;
-    font-family: "Merriweather", serif;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+main .section2 .imagenes .imagenes1 .parrafo {
+  text-align: center;
 }
-
-
-
-
-li{
-    position: sticky;
-    padding: 10px;
-    display: inline-block; /* para que me queden los elementos uno al lado del otro */ 
+main .section3 .subtitulo {
+  color: rgb(148, 107, 53);
+  text-align: center;
 }
-li a:hover{color: rgb(168, 177, 174);
-    background-color: aliceblue;
-}
-
-
-a {
-    position: sticky;
-    color: aliceblue;
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.subtitulo {
-    color: rgb(148, 107, 53);
-    text-align: center;
-}
-
-p{
-    padding: 20px;
-    line-height: 1.5;
-    font-size: 1.2rem;
-    font-family: "Playfair Display", serif;
-}
-
-img {
-    
-    width: 500px;
-    min-width: 300px;
-    max-width: 100%;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-img:hover{
-    opacity: .5;
+main .section3 p {
+  padding: 20px;
+  line-height: 1.5;
+  font-size: 1.2rem;
+  font-family: "Playfair Display", serif;
 }
 
 footer {
-    margin: 20px;
-    background-color:  rgb(168, 177, 174);
-    padding: 20px;
-    color: aliceblue;
+  margin: 20px;
+  background-color: rgb(168, 177, 174);
+  padding: 20px;
+  color: aliceblue;
 }
-h4 {margin: 5px;
-
-}
-.formulario {
-    width: 500px;
-    margin: 10px auto;
-    text-align: center;
+footer h4 {
+  margin: 5px;
 }
 
-.nosotros{
-    background-image: url(../img/FondoNosotros.png);
-    color: aliceblue;
-}
-
-.subtitulo1 {
-    text-align: center;
-    color:rgb(239, 193, 193) ;
-    font-size: 30px;
-}
-
-.subtitulo2 {
-    text-align: center;
-    color:rgb(239, 193, 193);
-    font-size: 20px;
-}
-
-.subtitulo3{
-    text-align: center;
-    color: rgb(148, 107, 53);
-    font-size: 20px;
-}
-
-.imagenes { 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-
-}
-
-.imagenes1 {
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.parrafo {
-    text-align: center;
-}
-
+/*# sourceMappingURL=style.css.map */

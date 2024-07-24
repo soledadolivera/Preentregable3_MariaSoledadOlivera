@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body {
+    background-color: rgb(234, 222, 207);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    background-color: rgb(168, 177, 174);
+    text-align: center;
+    margin:10px;
+    padding: 10px;
+    z-index:100;
+    img{
+        width: 150px;
+        padding: 10px;
+        max-width: 40cm;
+        min-width: 2cm;
+        height: auto;
+    }
+    h1 {
+        color: aliceblue;
+        padding: 5px;
+        font-family: "Merriweather", serif;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    h2 {
+        color: aliceblue;
+        padding: 5px;
+        font-family: "Merriweather", serif;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    nav{
+        top: 0;
+        position: sticky;
+        .menu{
+            position: sticky;
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            li{
+                padding: 10px;
+                display: inline-block; /* para que me queden los elementos uno al lado del otro */ 
+            
+            a{
+                position: sticky;
+                color: aliceblue;
+                font-size: 1.2rem;
+                font-weight: bold;
+                text-decoration: none;
+                padding: 20px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                &:hover{ color: rgb(168, 177, 174);
+                    background-color: aliceblue;
+                }
+            }
+              
+
+            }
+        }
+
+    }
+}
+
+main{
+    .acomodar_contenido{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .section1{
+        .subtitulo{
+            color: rgb(148, 107, 53);
+            text-align: center;
+        }
+        p{
+            padding: 20px;
+            line-height: 1.5;
+            font-size: 1.2rem;
+            font-family: "Playfair Display", serif; 
+        }
+    } 
+    .section2{
+        .imagenes{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            .imagenes1{
+                text-align: center;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                .parrafo{
+                    text-align: center;
+                }
+
+            }
+        }
+    }
+    .section3{
+        .subtitulo{
+            color: rgb(148, 107, 53);
+            text-align: center;
+        }
+        p{
+            padding: 20px;
+            line-height: 1.5;
+            font-size: 1.2rem;
+            font-family:"Playfair Display", serif;
+        }
+    }
+}
+
+footer{
+    margin: 20px;
+    background-color:  rgb(168, 177, 174);
+    padding: 20px;
+    color: aliceblue;
+    h4{
+        margin: 5px; 
+    }
+
+}
